@@ -49,7 +49,7 @@ public typealias UpdateNotificationStateCallback = (_ result: Result<isNotifying
 public final class Peripheral {
     fileprivate var peripheralProxy: PeripheralProxy!
     
-    init(peripheral: CBPeripheral) {
+    public init(peripheral: CBPeripheral) {
         self.peripheralProxy = PeripheralProxy(cbPeripheral: peripheral, peripheral: self)
     }
 }
